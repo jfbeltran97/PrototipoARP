@@ -7,22 +7,45 @@
     android:orientation="vertical"
     tools:context="com.example.johnny.prot_rest.ProductActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namePlato"
+        android:layout_gravity="center"
+        android:text="PRESIONE SIGUIENTE"/>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/bolon_de_verde1"
+        android:id="@+id/platosImageView"
+        android:src="@drawable/buy"
         android:scaleX="0.7"
         android:scaleY="0.7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:id="@+id/priceTextView"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="COMPRAR"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:onClick="selectQty"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGUIENTE"
+        android:onClick="changePlato"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINALIZAR COMPRA"
+        android:onClick="sendAllData"
         android:layout_gravity="center"/>
 </LinearLayout>
